@@ -1,0 +1,14 @@
+<h1 style="width:100%;text-align:center;">Yoyos!</h1>
+<table style="width:100%;text-align:center;">
+  <thead>
+    <th>Color</th>
+    <th>Country of origin</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="yoyo in yoyos">
+      <td ng-bind="yoyo.color"></td>
+      <td ng-bind="yoyo.countryOfOrigin"></td>
+    </tr>
+  </tbody>
+
+</table>

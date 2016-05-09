@@ -1,0 +1,19 @@
+<div ng-if="pokemon">
+
+  <h1 ng-bind="pokemon.data.name"></h1>
+  <span>
+    Types:
+    <ul>
+      <li ng-repeat="type in pokemon.data.types | limitTo: 6" ng-bind="type.name"></li>
+    </ul>
+  </span>
+  <span>
+    Moves:
+    <ul>
+      <li ng-repeat="move in pokemon.data.moves | limitTo: 6" ng-bind="move.name"></li>
+    </ul>
+  </span>
+
+  <img ng-if="pokemon.data.sprites.data.placeholder" ng-src="{{pokemon.data.sprites.data.image}}" alt="Pokemon Sprite">
+  <img ng-if="pokemon.data.sprites.status" ng-src="{{'http://pokeapi.co/' + pokemon.data.sprites.data.image}}" alt="Pokemon Sprite">
+</div>

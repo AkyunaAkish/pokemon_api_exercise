@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cDir1">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="js/modules/module.js"></script>
+  <script src="js/directives/gsAngularLogo.js"></script>
+  <script src="js/directives/pokemon-item.js"></script>
+  <script src="js/services/PokemonService.js"></script>
+  <script src="js/controllers/DirectiveController.js"></script>
+  <script src="js/controllers/PokemonController.js"></script>
+
+  <title>CustomDirectives1</title>
+</head>
+<body>
+
+  <!-- <div ng-controller="DirectiveController">
+  <gs-angular-logo yoyos="yoyos"></gs-angular-logo>
+</div> -->
+
+<div ng-controller="PokemonController">
+  <pokemon-item pokemon="pokemon[0]"></pokemon-item>
+  <pokemon-item pokemon="pokemon[1]"></pokemon-item>
+  <pokemon-item pokemon="pokemon[2]"></pokemon-item>
+  <pokemon-item pokemon="pokemon[3]"></pokemon-item>
+  <pokemon-item pokemon="pokemon[4]"></pokemon-item>
+</div>
+
+</body>
+</html>
